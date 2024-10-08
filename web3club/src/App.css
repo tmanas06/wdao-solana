@@ -1,0 +1,88 @@
+/* General Styles */
+.app-container {
+    padding: 20px;
+    /* Set some default padding for all screen sizes */
+  }
+  
+  /* Mobile Specific Adjustments */
+  @media (max-width: 768px) {
+    .app-container {
+      padding: 10px;  /* Reduce padding on smaller screens */
+    }
+  
+    /* Example: Make the navigation or any large components responsive */
+    .nav-item {
+      font-size: 14px;
+      margin-bottom: 10px; /* Increase margin between nav items on mobile */
+    }
+  
+    /* Ensure full-width for images */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    /* Example: Make text components responsive */
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 90%;
+    }
+  
+    /* Example: Adjust buttons for smaller screens */
+    .btn {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  
+    /* Adjust spacing for components like cards */
+    .card {
+      margin-bottom: 20px;
+    }
+  
+    /* Ensure proper scaling for any large blocks of content */
+    .content-block {
+      padding: 15px;
+      text-align: center;
+    }
+  
+    /* Example: Stack components on smaller screens */
+    .row {
+      flex-direction: column;
+    }
+  }
+  
+  /* Tablet Specific Adjustments */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .app-container {
+      padding: 15px;
+    }
+  
+    /* Adjust font sizes for tablet devices */
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .btn {
+      padding: 12px 25px;
+      font-size: 16px;
+    }
+  }
+  .contentWrapper {
+    padding-top: 60px; /* Adjust based on the height of your Navbar */
+  }
+  
+  /* Example Desktop Styles (default) */
+  @media (min-width: 1025px) {
+    .app-container {
+      padding: 25px;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    .btn {
+      padding: 15px 30px;
+      font-size: 18px;
+    }
+  }
+  

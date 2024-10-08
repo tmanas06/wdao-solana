@@ -1,0 +1,16 @@
+.fullPageIframe {
+    position: relative; /* If you want to use absolute positioning for iframe */
+    height: 100vh; /* Full height */
+    width: 100vw; /* Full width */
+    overflow: hidden;
+  }
+  
+  .fullPageIframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove default border */
+  }
+  

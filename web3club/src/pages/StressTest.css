@@ -1,0 +1,120 @@
+/* Apply a smooth gradient background to the entire page */
+.stress-test-container {
+    background: linear-gradient(135deg, #000000 0%, #000000 50%, #000000 100%);
+    color: #fff;
+    font-family: 'Audiowide', sans-serif;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  /* Title styling */
+  .page-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, #6eeb1a, #d8a7b1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: titleAnimation 2s infinite alternate;
+  }
+  
+  /* Description styling */
+  .page-description {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+  }
+  
+  /* Container for iframes */
+  .iframe-container {
+    margin: 20px auto;
+    position: relative;
+    display: inline-block;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* iframe styling */
+  iframe {
+    border: none;
+    border-radius: 15px;
+  }
+  
+  /* Game titles */
+  .game-title {
+    margin: 10px;
+    font-size: 2rem;
+    color: #ba0dfe;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.7);
+  }
+  
+  /* Animation for the title */
+  @keyframes titleAnimation {
+    from {
+      background-position: 0% 0%;
+    }
+    to {
+      background-position: 100% 100%;
+    }
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  /* Small screens (mobile devices) */
+  @media (max-width: 600px) {
+    .stress-test-container {
+        margin-top: 60px; /* Adjust top margin to leave space for navbar */
+      }
+    .page-title {
+      font-size: 2.5rem;
+    }
+  
+    .page-description {
+      font-size: 1.5rem;
+    }
+  
+    .game-title {
+      font-size: 1.5rem;
+    }
+  
+    .iframe-container {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    iframe {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Medium screens (tablets) */
+  @media (max-width: 768px) {
+     .stress-test-container {
+    margin-top: 60px; /* Adjust top margin to leave space for navbar */
+  }
+    .page-title {
+      font-size: 2.8rem;
+    }
+  
+    .page-description {
+      font-size: 1.8rem;
+    }
+  
+    .game-title {
+      font-size: 1.8rem;
+    }
+  
+    .iframe-container {
+      width: 90%;
+      margin: 15px auto;
+    }
+  
+    iframe {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
